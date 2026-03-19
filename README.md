@@ -43,7 +43,7 @@ For each assignment:
   * How to run it
 ## 🔀 Submission Workflow (Do This Every Time)
 ### 1. Fork the Repository
-👉 https://github.com/varunaditya27/CC-Web-Dev-Bootcamp-Submissions Click Fork
+👉 https://github.com/shash-2106/CC-Web-Dev-Bootcamp-Submissions Click Fork
 
 ### 2. Clone Your Fork
 ```
