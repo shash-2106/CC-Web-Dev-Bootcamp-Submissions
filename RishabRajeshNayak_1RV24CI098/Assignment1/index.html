@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishab's To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header class="profile-section">
+      <div class="avatar">👨‍💻</div>
+      <h2>Rishab Rajesh Nayak</h2>
+      <p>USN: 1RV24CI098 | Coding enthusiast building awesome web apps!</p>
+      
+      <div class="tags">
+        <span class="tag tag-blue">Productivity</span>
+        <span class="tag tag-purple">Assignment 1</span>
+        <span class="tag tag-green">Web Dev</span>
+      </div>
+    </header>
+
+    <main class="todo-card">
+      <h1 class="app-title">My Tasks</h1>
+      
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off">
+        <button id="addBtn" onclick="addTask()">Add Task</button>
+      </div>
+
+      <div class="list-container">
+        <ul id="taskList">
+          <!-- Tasks dynamically added here -->
+        </ul>
+        
+        <div class="empty-state" id="emptyState">
+          No tasks yet. Add one above!
+        </div>
+      </div>
+
+      <div class="actions">
+        <!-- Disabled by default, enabled when there are tasks -->
+        <button id="clearBtn" class="clear-btn" onclick="clearAllTasks()" disabled>Clear All</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
