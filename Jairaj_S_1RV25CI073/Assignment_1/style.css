@@ -1,0 +1,116 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+#clr {
+  background: #ff4d4d;   /* red */
+}
+#clr:disabled:hover {
+  background: #ffb3b3;
+  cursor: not-allowed;
+}
+
+#clr:hover {
+  background: #e60000;   /* darker red */
+}
+/* Profile card */
+/* Profile card (FIXED) */
+.profile {
+  max-width: 400px;
+  margin: 20px auto;   /* centers horizontally */
+  padding: 20px;
+  background: #ffffff;
+  /* border-radius: 10px; */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.profile h3 {
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Input section */
+.input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.input input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input input:focus {
+  border-color: #4a90e2;
+}
+
+.input button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input button:hover {
+  background: #357bd8;
+}
+
+/* Todo list */
+#todolist {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Each item */
+#todolist div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Checkbox + text alignment */
+#todolist div input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Delete button */
+#todolist button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#todolist button:hover {
+  background: #e60000;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>to do list</title>
+ <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="profile">
+           <img src="image.png" alt="profile picture">
+            <h3>JAIRAJ</h3>
+            <p>I am first year AIML student</p>
+        </div>
+        <section class="input">
+            <input type="text" id="txtbox">
+           <button id="add" onclick="add()">add</button>
+           <button onclick="clr()" id ="clr" >clear all</button>
+        </section>
+        <section id="todolist">
+        </section>
+        
+        
+        
+        <script> 
+        let input=document.querySelector("#txtbox");
+        
+        let the_list=document.getElementById("todolist");
+        const add =()=>{if (input.value.trim() !== "") {
+        the_list.innerHTML+=`<div>
+            <input type='checkbox' onclick="del(this)" >${input.value}
+            <button onclick="del(this)">delete</button>
+            </div>`;
+            input.value="";
+            toggleClearBtn();
+        }
+        };
+        const del =(btn)=>{
+          btn.parentElement.remove()
+          toggleClearBtn();
+        }
+        const clr = () => {
+          the_list.innerHTML = "";
+          toggleClearBtn();
+}
+const toggleClearBtn = () => {
+    document.getElementById("clr").disabled = the_list.children.length === 0;
+}
+        </script>
+
+    </body>
+</html>
